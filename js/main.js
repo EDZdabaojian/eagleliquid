@@ -1,26 +1,45 @@
-function scrollToSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
+/* Tab Switching */
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab-link");
+  const contents = document.querySelectorAll(".tab-content");
 
-function switchTab(tabId) {
-  // Hide all tabs
-  document.querySelectorAll('.tab-content').forEach(tab => {
-      tab.classList.remove('active');
+  tabs.forEach(tab => {
+      tab.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Remove active class from all tabs and contents
+          tabs.forEach(t => t.classList.remove("active"));
+          contents.forEach(content => content.classList.remove("active"));
+
+          // Add active class to the clicked tab and corresponding content
+          const tabId = this.getAttribute("data-tab");
+          this.classList.add("active");
+          document.getElementById(tabId).classList.add("active");
+      });
   });
-
-  // Show selected tab
-  document.getElementById(tabId).classList.add('active');
-}
-
-/*
-window.addEventListener("scroll", function() {
-  let element = document.querySelector(".product-box");
-  let position = element.getBoundingClientRect().top;
-  let windowHeight = window.innerHeight;
-
-  if (position < windowHeight) {
-    element.classList.add("show"); // Play animation
-  }
 });
-*/
+
+
+/* Get Header */
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+});
+
+/* Get Footer */
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+});
+
+
+/* Open External Site Confirmation */
+function openExternalSite(url) {
+  let userConfirmation = confirm("Open external website?");
+  if (userConfirmation) {
+      window.location.href = url;
+  }
+}

@@ -1,0 +1,26 @@
+/*============= Footer ===============*/
+.footer {
+    width: 100%;
+    min-height: 50%;
+    background-color: rgb(28, 28, 28);
+  }
+  
+  .footer-row {
+    display: flex;        /* Enables horizontal layout */
+    justify-content: space-between; /* Evenly spaces out the boxes */
+    align-items: top;  /* Aligns them vertically in the center */
+    width: 100%;          /* Adjust as needed */
+    max-width: 90%;     /* Limits the maximum width */
+    margin: auto;         /* Centers the container */
+    padding: 20px;        /* Adds some space around */
+  }
+  
+  .footer-text-block {
+    text-align: left;
+    min-width: 30%;
+    padding: 20px; 
+  }
+  
+  .footer-text-block p {
+    margin-bottom: 10px;
+  }

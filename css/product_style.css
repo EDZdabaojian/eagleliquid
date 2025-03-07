@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #a4b4cd;
+  scroll-behavior: smooth;
+}
+
+
+.header-bar {
+  display: flex;        /* Enables horizontal layout */
+  justify-content: space-between; /* Evenly spaces out the boxes */
+  width: 100%;     /* Limits the maximum width */
+  height: 10vh;
+  margin: auto;         /* Centers the container */
+  padding: 10px;        /* Adds some space around */
+  background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
+  margin-right: 0px;
+  font-size: 2.5vh;
+}
+
+.header-bar-row {
+  display: flex;        /* Enables horizontal layout */
+  justify-content: space-between; /* Evenly spaces out the boxes */
+  margin-left: 55%;
+  width: 50%;     /* Limits the maximum width */
+  height: 10vh;
+  background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
+}
+
+.header-page p {
+  color: white; 
+  font-size: 3vh; 
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.topbar {
+  margin-right: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.topbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.topbar ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.topbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.topbar ul li a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #000000;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Show dropdown only when hovering over "Product" */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.dropdown-menu li a:hover {
+  background: #000000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*=============== Side Bar ================*/
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%
+}
+
+.sidebar {
+  height: 100vh;
+  width: 30vh;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: #444;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover, .tab-link.active {
+  background: #666;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/*
+img {
+  width: 150px;
+  margin: 10px;
+}
+  */
+
+/* Buttons */
+.button-row {
+  display: flex;        /* Enables horizontal layout */
+  justify-content: space-between; /* Evenly spaces out the boxes */
+  width: 100%;          /* Adjust as needed */
+  height: 100px;
+  max-width: 500px;     /* Limits the maximum width */
+  padding: 10px;        /* Adds some space around */
+}
+
+.view-product-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  background-color: rgb(230, 92, 11); /* Blue background */
+  color: rgb(255, 255, 255); /* White text */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Text size */
+  text-align: center;
+  cursor: pointer; /* Show pointer on hover */
+  transition: background 0.3s ease;
+  z-index: 5;
+}
+
+.view-product-button:hover {
+  background-color: #b10000; /* Darker blue on hover */
+}
+
+.contact-us-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  color: rgb(230, 92, 11); /* White text */
+  border: 2px solid rgb(230, 92, 11);
+  background-color: transparent;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Text size */
+  text-align: center;
+  cursor: pointer; /* Show pointer on hover */
+  transition: background 0.3s ease;
+  z-index: 5;
+}
+
+.contact-us-button:hover {
+  background-color: white; /* Darker blue on hover */
+}
+
+
+/*============= Product1 ===============*/
+
+.products1 {
+  min-height: 120vh;
+  display: flex;
+  margin-left:30vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;  /* Smaller subtitle */
+  color: rgb(0, 98, 227);
+  font-family: 'Arial', sans-serif;
+  z-index: 2;
+  font-family: Arial, sans-serif;
+}
+
+.section-subtitle {
+  font-size: 25px;  /* Smaller subtitle */
+  color: rgb(0, 98, 227);
+  font-family: 'Arial', sans-serif;
+  z-index: 2;
+  font-family: Arial, sans-serif;
+}
+
+.product-row {
+  display: flex;        /* Enables horizontal layout */
+  justify-content: space-between; /* Evenly spaces out the boxes */
+  align-items: center;  /* Aligns them vertically in the center */
+  margin-left: 30%;
+  max-width: 60%;     /* Limits the maximum width */
+  padding: 20px;        /* Adds some space around */
+  background-color: white ; /* Dark background for contrast */
+  text-align: center;
+
+  /* Apply animation */
+  opacity: 0; /* Initially hidden */
+  animation: float-in 1s ease-out forwards;
+}
+
+.product-box {
+  text-align: center;
+  z-index: 2;
+  width: 23%;
+  height: flex;
+}
+
+.product_image {
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover; /* Ensures it fills the box nicely */
+  width: 26vh;
+  margin: 10px;
+}
+
+.product_image:hover {
+  transform: scale(1.5); /* Increase size by 10% */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-box p {
+  color: black; 
+  font-size: 18px; 
+  font-family: Arial, sans-serif; 
+  font-weight: bold;
+}
+
+
