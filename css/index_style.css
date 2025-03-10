@@ -257,6 +257,10 @@ h1 {
   animation: float-in 1s ease-out forwards;
 }
 
+.factory-main {
+  width:85%;
+}
+
 .authorization1 {
   max-width: 40%;
 }
@@ -337,14 +341,35 @@ h1 {
 }
 
 .product-more-button {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background-color: #ff5500; /* Blue background */
   color: white; /* White text */
   padding: 20px 20px; /* Size */
   border: none; /* Remove default border */
   border-radius: 10px; /* Rounded corners */
   font-size: 24px; /* Text size */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background 0.3s ease;
+
+  /* Apply animation */
+  opacity: 0; /* Initially hidden */
+  animation: float-in 1s ease-out forwards;
+}
+
+.product-more-button:hover {
+  background-color: #ff0000; /* Darker blue on hover */
+}
+
+.product-more-button-small {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  background-color: #ff5500; /* Blue background */
+  color: white; /* White text */
+  padding: 15px 15px; /* Size */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 20px; /* Text size */
   cursor: pointer; /* Show pointer on hover */
   transition: background 0.3s ease;
 
@@ -366,6 +391,7 @@ h1 {
   align-items: center;
   text-align: center;
   background-size: cover;
+  background-color: rgb(237, 237, 237);
   padding: 20px;
 }
 
