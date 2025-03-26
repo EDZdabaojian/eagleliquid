@@ -272,6 +272,7 @@ h1 {
 
 .about-us-text-container {
   max-height: 100vh;
+  min-width: 60%;
   max-width: 80%;
   display: flex;
   justify-content: center;
