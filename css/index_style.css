@@ -46,7 +46,7 @@ h1 {
 /* Main title */
 .main-title {
   margin-top: 130px;
-  font-size: 7rem;  /* Big title */
+  font-size: 11vh;  /* Big title */
   color: white;
   font-family: 'Arial', sans-serif;
   margin-bottom: 10px;
@@ -59,7 +59,7 @@ h1 {
 
 /* Subtitle */
 .subtitle {
-  font-size: 3rem;  /* Smaller subtitle */
+  font-size: 5vw;  /* Smaller subtitle */
   color: white;
   font-family: 'Arial', sans-serif;
   padding: 10px;
@@ -136,25 +136,36 @@ h1 {
   /* z-index: -1; Ensures the image stays in the background */
 }
 
+
+.background-image-opaque {
+  width: 100%;
+  object-fit: cover;
+  /* height: 100%;  */
+  /* z-index: -1; Ensures the image stays in the background */
+}
+
 /*============= Product2 ===============*/
 .product2 {
+  
   min-height: 100vh;
   position: center;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: rgb(192, 203, 224);
-  padding: 20px;
+  padding: 1vw;
 }
 
 .product-row2 {
+  
   display: flex;        /* Enables horizontal layout */
+  flex-wrap: wrap;
   justify-content: space-between; /* Evenly spaces out the boxes */
   align-items: center;  /* Aligns them vertically in the center */
-  width: 90%;     /* Limits the maximum width */
-  height: 50vh;
+  width: 96%;     /* Limits the maximum width */
+  /* height: 50vh;*/
   margin: auto;         /* Centers the container */
-  padding: 10px;        /* Adds some space around */
+  padding: 1vw;        /* Adds some space around */
   background-color: rgb(255, 255, 255) ; /* Dark background for contrast */
   margin-bottom: 10px;
 
@@ -165,15 +176,15 @@ h1 {
 
 .product-text2 {
   position: center;
-  max-width: 50%;
+  max-width: 49%;
   max-height: 90%;
-  padding: 20px;
+  padding: 1vw;
   display: flex;
   flex-direction: column;
 }
 
 .product-text2 h1 {
-  font-size: 5vh;
+  font-size: 2.4vw;
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -182,7 +193,7 @@ h1 {
 }
 
 .product-text2 p {
-  font-size: 3vh;
+  font-size: 1.8vw;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   text-align: left;
   line-height: 1.5;
@@ -191,7 +202,24 @@ h1 {
 .product-image2 {
   text-align: center;
   width: 50%;
-  height: 100%;
+  height: auto;
+}
+
+.product-more-button-small {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  background-color: #ff5500; /* Blue background */
+  color: white; /* White text */
+  padding: 5% 5%; /* Size */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 2vw; /* Text size */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background 0.3s ease;
+}
+
+.product-more-button-small:hover {
+  background-color: #ff0000; /* Darker blue on hover */
 }
 
 /*============= About Us ===============*/
@@ -324,7 +352,7 @@ h1 {
 
 .product-box p {
   color: black; 
-  font-size: 18px; 
+  font-size: 1.5vw; 
   font-family: Arial, sans-serif; 
   font-weight: bold;
 }
@@ -336,7 +364,7 @@ h1 {
 }
 
 .more-product-image {
-  min-width: 800px; /* Ensures the image scales inside */
+  min-width: 90%; /* Ensures the image scales inside */
   object-fit: cover; /* Ensures it fills the box nicely */
 }
 
@@ -361,26 +389,7 @@ h1 {
   background-color: #ff0000; /* Darker blue on hover */
 }
 
-.product-more-button-small {
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-  background-color: #ff5500; /* Blue background */
-  color: white; /* White text */
-  padding: 15px 15px; /* Size */
-  border: none; /* Remove default border */
-  border-radius: 6px; /* Rounded corners */
-  font-size: 20px; /* Text size */
-  cursor: pointer; /* Show pointer on hover */
-  transition: background 0.3s ease;
 
-  /* Apply animation */
-  opacity: 0; /* Initially hidden */
-  animation: float-in 1s ease-out forwards;
-}
-
-.product-more-button:hover {
-  background-color: #ff0000; /* Darker blue on hover */
-}
 
 /* Client Section */
 .clients {
