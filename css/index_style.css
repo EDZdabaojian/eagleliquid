@@ -59,7 +59,7 @@ h1 {
 
 /* Subtitle */
 .subtitle {
-  font-size: 5vw;  /* Smaller subtitle */
+  font-size: 6vh;  /* Smaller subtitle */
   color: white;
   font-family: 'Arial', sans-serif;
   padding: 10px;
@@ -176,9 +176,9 @@ h1 {
 
 .product-text2 {
   position: center;
-  max-width: 49%;
+  max-width: 50%;
   max-height: 90%;
-  padding: 1vw;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
 }
@@ -202,7 +202,6 @@ h1 {
 .product-image2 {
   text-align: center;
   width: 50%;
-  height: auto;
 }
 
 .product-more-button-small {
@@ -273,7 +272,7 @@ h1 {
 
 .about-us-text-container {
   max-height: 100vh;
-  width: 80%;
+  max-width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,7 +298,7 @@ h1 {
 
 /*============= Product1 ===============*/
 .products1 {
-  min-height: 120vh;
+  
   display: flex;
   position: center;
   flex-direction: column;
@@ -308,7 +307,7 @@ h1 {
   text-align: center;
   background: rgb(255, 177, 104);
   background-size: cover;
-  padding: 50px;
+  width: 98%
 }
 
 .section-title {
@@ -424,3 +423,26 @@ h1 {
   position: absolute;
 }
 
+.review-image{
+  height: 20vh;
+  padding: 1vh;
+  max-width: 70%;
+}
+
+.contact-us-info {
+  width: 75%;
+  max-height: 100%;
+  text-align: left;
+  font-size: 200;  /* Smaller subtitle */
+  font-family: 'Arial', sans-serif;
+  z-index: 2;
+  /* Apply animation */
+  opacity: 0.1; /* Initially hidden */
+  animation: float-in 1s ease-out forwards;
+  padding: 40px;
+  background-color: white;
+}
+
+.contact-us-info p {
+  color: black; font-size: 16px; font-family: Arial, sans-serif;
+}
