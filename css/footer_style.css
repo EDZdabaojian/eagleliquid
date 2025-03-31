@@ -10,7 +10,7 @@
     justify-content: space-between; /* Evenly spaces out the boxes */
     align-items: top;  /* Aligns them vertically in the center */
     width: 90%;          /* Adjust as needed */
-    padding: 20px;        /* Adds some space around */
+    padding: 2vw;        /* Adds some space around */
   }
   
   .footer-text-block {
@@ -23,13 +23,13 @@
   
   .footer-text-block p {
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 2vw;
     color: white; 
     font-family: Arial, sans-serif;
   }
 
   .footer-text-block h1 {
     color: white; 
-    font-size: 1.3rem; 
+    font-size: 2.6vw; 
     font-family: Arial, sans-serif;
   }

@@ -3,9 +3,9 @@
 /* Logo styling */
 .logo {
   position: absolute;
-  top: 20px;     /* Adjust distance from top */
+  top: 1vw;     /* Adjust distance from top */
   left: 7%;    /* Adjust distance from left */
-  width: 100px;  /* Adjust size */
+  width: 10vw;  /* Adjust size */
   height: auto;  /* Maintain aspect ratio */
   z-index: 1;   /* Ensure it's above other content */
 }
@@ -14,12 +14,12 @@
     display: flex;        /* Enables horizontal layout */
     justify-content: space-between; /* Evenly spaces out the boxes */
     width: 100%;     /* Limits the maximum width */
-    height: 10vh;
+    height: 6vw;
     margin: auto;         /* Centers the container */
-    padding: 10px;        /* Adds some space around */
+    padding: 1vw;        /* Adds some space around */
     background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
     margin-right: 0px;
-    font-size: 2.5vh;
+    font-size: 2vw;
   }
   
   .header-bar-row {
@@ -27,24 +27,26 @@
     justify-content: space-between; /* Evenly spaces out the boxes */
     /*margin-left: 55%;*/
     width: 50%;     /* Limits the maximum width */
-    height: 10vh;
+    height: 10vw;
     background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
     margin-right: 2%;
   }
   
-  .header-page p {
+
+  
+  .topbar {
+    margin-right: 0px;
+    padding: 1vw;
+    display: flex;
+    justify-content: right;
+    z-index: 9;
+  }
+
+  .topbar p {
     color: white; 
     font-size: 3vh; 
     font-family: Arial, sans-serif;
     font-weight: lighter;
-  }
-  
-  .topbar {
-    margin-right: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: right;
-    z-index: 9;
   }
   
   .topbar ul {
@@ -56,13 +58,13 @@
   
   .topbar ul li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 1.5vw;
   }
   
   .topbar ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0vw 1.5vw;
     display: block;
   }
   
