@@ -7,7 +7,7 @@
   left: 7%;    /* Adjust distance from left */
   width: 100px;  /* Adjust size */
   height: auto;  /* Maintain aspect ratio */
-  z-index: 10;   /* Ensure it's above other content */
+  z-index: 1;   /* Ensure it's above other content */
 }
 
 .header-bar {
@@ -20,16 +20,16 @@
     background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
     margin-right: 0px;
     font-size: 2.5vh;
-    z-index: 9;
   }
   
   .header-bar-row {
     display: flex;        /* Enables horizontal layout */
     justify-content: space-between; /* Evenly spaces out the boxes */
-    margin-left: 55%;
+    /*margin-left: 55%;*/
     width: 50%;     /* Limits the maximum width */
     height: 10vh;
     background-color: rgb(0, 0, 0) ; /* Dark background for contrast */
+    margin-right: 2%;
   }
   
   .header-page p {
@@ -44,6 +44,7 @@
     padding: 10px;
     display: flex;
     justify-content: right;
+    z-index: 9;
   }
   
   .topbar ul {
