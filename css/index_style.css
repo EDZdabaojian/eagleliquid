@@ -207,7 +207,7 @@ h1 {
 .product-more-button-small {
   margin-top: 3vh;
   margin-bottom: 2vh;
-  background-color: #ff5500; /* Blue background */
+  background-color: rgb(255, 106, 0); /* Blue background */
   color: white; /* White text */
   padding: 5% 5%; /* Size */
   border: none; /* Remove default border */
@@ -218,7 +218,7 @@ h1 {
 }
 
 .product-more-button-small:hover {
-  background-color: #ff0000; /* Darker blue on hover */
+  background-color: red; 
 }
 
 /*============= About Us ===============*/
@@ -231,12 +231,12 @@ h1 {
   align-items: center;
   text-align: center;
   background: white;
-  background-size: cover;
+  /*background-size: cover;*/
   padding: 20px;
 }
 
 .about-us h1 {
-  color: Black; 
+  color: rgb(255, 106, 0); 
   font-size: 7vh; 
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -266,7 +266,6 @@ h1 {
   font-family: 'Arial', sans-serif;
   line-height: 1.8;
   z-index: 2;
-  padding: 20px;
 }
 
 
@@ -278,7 +277,9 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
 
   /* Apply animation */
   opacity: 0; /* Initially hidden */
@@ -371,7 +372,7 @@ h1 {
 .product-more-button {
   margin-top: 5vh;
   margin-bottom: 5vh;
-  background-color: #ff5500; /* Blue background */
+  background-color: rgb(255, 106, 0); /* Blue background */
   color: white; /* White text */
   padding: 20px 20px; /* Size */
   border: none; /* Remove default border */
@@ -386,7 +387,7 @@ h1 {
 }
 
 .product-more-button:hover {
-  background-color: #ff0000; /* Darker blue on hover */
+  background-color: red; /* Darker blue on hover */
 }
 
 
@@ -405,7 +406,7 @@ h1 {
 }
 
 .clients h1 {
-  color: rgb(226, 51, 11); 
+  color: rgb(255, 106, 0); 
   font-size: 7vh; 
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -434,9 +435,10 @@ h1 {
   width: 75%;
   max-height: 100%;
   text-align: left;
-  font-size: 200;  /* Smaller subtitle */
+  font-size: 1.3rem;
   font-family: 'Arial', sans-serif;
   z-index: 2;
+
   /* Apply animation */
   opacity: 0.1; /* Initially hidden */
   animation: float-in 1s ease-out forwards;
@@ -444,6 +446,22 @@ h1 {
   background-color: white;
 }
 
+.contact-us-info h1 {
+  color: rgb(255, 106, 0); 
+  font-size: 2.5rem; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.contact-us-info h2 {
+  color: black; 
+  font-size: 1.5rem; 
+  font-family: Arial, sans-serif;
+
+}
+
 .contact-us-info p {
-  color: black; font-size: 16px; font-family: Arial, sans-serif;
+  color: black; 
+  font-size: 1.2rem; 
+  font-family: Arial, sans-serif;
 }
